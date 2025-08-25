@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Dark Theme Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom Dark Theme Colors -->
+    <color name="gray_200">#FF424242</color>
+    <color name="gray_400">#FF616161</color>
+    <color name="gray_600">#FF9E9E9E</color>
+    <color name="gray_800">#FFEEEEEE</color>
+
+    <color name="red_500">#FFF44336</color>
+    <color name="green_500">#FF4CAF50</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="orange_500">#FFFF9800</color>
+
+    <!-- Semantic Colors for Dark Theme -->
+    <color name="colorPrimary">@color/purple_200</color>
+    <color name="colorPrimaryVariant">@color/purple_700</color>
+    <color name="colorOnPrimary">@color/black</color>
+
+    <color name="colorSecondary">@color/teal_200</color>
+    <color name="colorSecondaryVariant">@color/teal_700</color>
+    <color name="colorOnSecondary">@color/black</color>
+
+    <color name="colorSurface">#FF121212</color>
+    <color name="colorOnSurface">@color/white</color>
+
+    <color name="colorError">@color/red_500</color>
+    <color name="colorOnError">@color/black</color>
+
+    <!-- Background Colors for Dark Theme -->
+    <color name="background">#FF121212</color>
+    <color name="surface">#FF1E1E1E</color>
+
+    <!-- Text Colors for Dark Theme -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    <color name="text_hint">#80FFFFFF</color>
+
+    <!-- Card Colors for Dark Theme -->
+    <color name="card_background">#FF1E1E1E</color>
+    <color name="card_stroke">#FF424242</color>
+
+    <!-- EditText Colors for Dark Theme -->
+    <color name="edittext_background">#FF2D2D2D</color>
+    <color name="edittext_stroke">#FF616161</color>
+    <color name="edittext_hint">#FF9E9E9E</color>
+</resources>

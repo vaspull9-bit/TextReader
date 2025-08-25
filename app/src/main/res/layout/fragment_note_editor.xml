@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editor.NoteEditorFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TextReader.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.TextReader.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Назад" />
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Заголовок заметки"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences" />
+
+                <ImageButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_save"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Сохранить" />
+
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Поделиться" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="?attr/colorPrimarySurface"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnBold"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_bold"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Жирный текст" />
+
+            <ImageButton
+                android:id="@+id/btnItalic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_italic"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Курсив" />
+
+            <ImageButton
+                android:id="@+id/btnUnderline"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_underline"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Подчеркивание" />
+
+            <ImageButton
+                android:id="@+id/btnStrikethrough"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_strikethrough"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Зачеркивание" />
+
+            <ImageButton
+                android:id="@+id/btnImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_image"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Вставить изображение" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Начните писать заметку..."
+                android:gravity="top"
+                android:minHeight="200dp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:imeOptions="actionDone" />
+
+            <ImageView
+                android:id="@+id/ivNoteImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:contentDescription="Изображение заметки" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

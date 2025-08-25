@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TextReader</string>
+    <string name="title_notes">Мои заметки</string>
+    <string name="title_editor">Редактор</string>
+
+    <!-- Добавленная строка -->
+    <string name="add_note">Добавить заметку</string>
+
+    <string name="menu_save">Сохранить</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_delete">Удалить</string>
+    <string name="menu_export_txt">Экспорт в TXT</string>
+    <string name="menu_export_pdf">Экспорт в PDF</string>
+    <string name="menu_export_excel">Экспорт в Excel</string>
+    <string name="menu_export_word">Экспорт в Word</string>
+    <string name="menu_about">О программе</string>
+
+    <string name="about_text">VShargin (C) 2025. vaspull9@gmail.com, TextReader, v1.0\n\nПрограмма блокнот</string>
+    <string name="hint_title">Заголовок заметки</string>
+    <string name="hint_content">Начните писать заметку...</string>
+
+    <string name="error_empty_title">Введите заголовок</string>
+    <string name="error_empty_content">Введите содержимое заметки</string>
+    <string name="success_save">Заметка сохранена</string>
+    <string name="success_delete">Заметка удалена</string>
+
+    <string name="export_success">Файл экспортирован</string>
+    <string name="export_error">Ошибка экспорта</string>
+
+    <!-- Дополнительные строки для лучшей доступности -->
+    <string name="desc_back">Назад</string>
+    <string name="desc_save">Сохранить заметку</string>
+    <string name="desc_share">Поделиться заметкой</string>
+    <string name="desc_bold">Жирный текст</string>
+    <string name="desc_italic">Курсив</string>
+    <string name="desc_underline">Подчеркивание</string>
+    <string name="desc_strikethrough">Зачеркивание</string>
+    <string name="desc_image">Вставить изображение</string>
+</resources>

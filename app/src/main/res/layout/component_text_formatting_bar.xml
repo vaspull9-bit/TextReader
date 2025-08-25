@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?attr/colorPrimarySurface"
+    android:padding="8dp">
+
+    <ImageButton
+        android:id="@+id/btnBold"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_bold"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Жирный текст"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/btnItalic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_italic"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Курсив"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/btnUnderline"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_underline"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Подчеркивание"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/btnStrikethrough"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_strikethrough"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Зачеркивание"
+        android:scaleType="centerInside" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/gray_400" />
+
+    <ImageButton
+        android:id="@+id/btnImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_image"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Вставить изображение"
+        android:scaleType="centerInside" />
+
+</LinearLayout>
